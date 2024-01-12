@@ -24,8 +24,20 @@
     function buildPeter() {
       return { firstName: "Peter", lastName: "Pan", age: 12 }
     }
+    //console.log(buildPeter())
 
-
+    function build2(fN, lN, age) {
+      return {
+        firstName: fN,
+        lastName: lN,
+        age
+      }
+    }
+    let Steve = build2("Steve", "Handcock", 29)
+    let Sarah = build2("Sarah", "Smith", 9)
+    console.log(`${Steve.firstName} is dating ${Sarah.firstName}`)
+    console.log(Steve, Sarah)
+    
     // 👉 CHALLENGE 2
     // 🧠 The function buildUser takes three arguments and uses them to build an object and return it.
     // 🧠 Example of usage:
@@ -41,6 +53,7 @@
 
     // 👉 CHALLENGE 3
     // 🧠 The function deletePrice takes an object as its argument and deletes its "price" property if it exists.
+
     // 🧠 If on the other hand there is no "price" property on the object, a "priceless" property with a value of true is added to it.
     // 🧠 After the modification of the object, it is returned.
     // 🧠 Note that the argument of the function is missing, you must write it.
